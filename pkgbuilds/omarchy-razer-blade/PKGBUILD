@@ -1,8 +1,8 @@
 # Maintainer: Luxore <luxore@users.noreply.github.com>
 
 pkgname=omarchy-razer-blade
-pkgver=0.4.0
-pkgrel=2
+pkgver=0.4.5
+pkgrel=1
 pkgdesc="Razer Blade firmware power, cooling, charge, and display controls"
 arch=('x86_64')
 url="https://github.com/luxore/omarchy-razer-blade"
@@ -12,9 +12,9 @@ makedepends=('cargo')
 install=omarchy-razer-blade.install
 options=('!debug')
 
-_commit=57324b96d3c294693ed0daa9e31658b6d1817afe
+_commit=865b95a9cb9042b7e29a97dc4c6d0bf35fe452ae
 source=("$pkgname-$_commit.tar.gz::$url/archive/$_commit.tar.gz")
-sha256sums=('d82c9ff9c8df4dedd88eb75a57eb3a8527c36978406a15c0f4028c34d1d58e45')
+sha256sums=('ed853ef0016584b26a744c7e0365d728e8f1a3b0b5794699d38a7cedadce59b9')
 
 prepare() {
   cd "$srcdir/$pkgname-$_commit"
